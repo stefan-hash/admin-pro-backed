@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const dbConnection = async() => {
 
     try {
-        await mongoose.connect( process.env.DB_CNN , {
+        await mongoose.connect( 'mongodb+srv://mean_user:FOpiidRhFFihDgK8@cluster0.ppkwx.mongodb.net/Tiendadb?', {
             useNewUrlParser: true, 
             useUnifiedTopology: true,
             useCreateIndex: true
